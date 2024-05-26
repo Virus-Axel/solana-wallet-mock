@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Solana Wallet Mock",
+    "description": "A simple solana wallet chrome extension that can pretend to be another wallet.",
+    "version": "0.1",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "wallet_mock.png"
+    }
+}  
