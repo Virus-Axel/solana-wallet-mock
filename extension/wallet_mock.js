@@ -25,3 +25,6 @@ class walletMock {
 };
 
 window.backpack = new walletMock();
+window.solflare = new walletMock();
+window.phantom = new walletMock();
+window.solana = new walletMock();
