@@ -19,6 +19,12 @@ class walletMock {
         return tx;
     }
 
+    signMessage(message, _encoding='utf8') {
+        const arr = new Uint8Array(64);
+        crypto.getRandomValues(arr);
+        return arr;
+    }
+
     connect() {
         if (this.seed) {
             this.keypair = (solanaWeb3.Keypair.fromSecretKey(new Uint8Array(this.seed)));
